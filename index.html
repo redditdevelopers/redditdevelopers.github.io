@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Palestine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Poppins:wght@600&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(270deg, black, white, green, red);
+            background-size: 600% 600%;
+            animation: colorShift 10s infinite alternate ease-in-out;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+        @keyframes colorShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 25% 50%; }
+            50% { background-position: 50% 50%; }
+            75% { background-position: 75% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .message {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px red; }
+            50% { text-shadow: 0 0 20px white; }
+            100% { text-shadow: 0 0 30px green; }
+        }
+
+        .ayat {
+            font-size: 2rem;
+            font-weight: bold;
+            color: yellow;
+            font-family: 'Almarai', sans-serif;
+            margin: 15px 0;
+        }
+
+        .translation {
+            font-size: 1.4rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
-<img src="forkit.gif" id="octocat" alt="" />
-
-<h1>Hey, I am spoon-knife! how are you sir?<h1>
-<p>
-  Fork me? Fork you, @Israel!
-</p>
-<p>
-  Sean made a change
-</p>
-
+    <div class="message">Free Palestine! <br> Fruck Israel!</div>
+    <div class="ayat">﴿وَلاَ تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ﴾</div>
+    <div class="translation">(And never think that Allah is unaware of what the wrongdoers do.) - Surah Ibrahim 14:42</div>
+    <div class="ayat">﴿إِنْ يَنْصُرْكُمُ اللَّهُ فَلَا غَالِبَ لَكُمْ﴾</div>
+    <div class="translation">(If Allah helps you, none can overcome you.) - Surah Aal-E-Imran 3:160</div>
+    <div class="ayat">﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</div>
+    <div class="translation">(Indeed, with hardship comes ease.) - Surah Al-Inshirah 94:6</div>
 </body>
 </html>
