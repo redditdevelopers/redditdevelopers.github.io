@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Arbaz Ahmad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3595/3595030.png">
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://slatestarcodex.com/wp-content/themes/responsive-pujugama-v3/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' id='font-awesome-css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' type='text/css'
+        media='all' />
+
+    <script type="text/javascript" src="https://c0.wp.com/c/6.7.1/wp-includes/js/jquery/jquery.min.js"
+        id="jquery-core-js"></script>
+
+    <style>
+        body {
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        .read-more,
+        .hide-btn {
+            text-decoration: none;
+        }
+
+        .image-container img {
+            pointer-events: none;
+            user-select: none;
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: 0 15px;
+            -webkit-user-drag: none;
+        }
+
+        /* tooltip (on hovering over the a particular word) */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: default;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .tooltip .tooltip-box {
+            visibility: hidden;
+            width: 220px;
+            background-color: white;
+            color: #333;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #799adc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .tooltip:hover .tooltip-box {
+            visibility: visible;
+            opacity: 1;
+            font-size: 11px;
+        }
+
+        /* small arrow */
+        .tooltip .tooltip-box::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: #799adc transparent transparent transparent;
+        }
+    </style>
+
+</head>
+
+<body data-rsssl=1 class="home blog s1-collapse s2-collapse">
+
+    <div id="pjgm-wrap">
+        <div id="pjgm-header">
+            <div id="pjgm-menubar">
+                <a href="https://arbazahmad.in/" class="pjgm-home" title="Arbaz Ahmad" rel="home">Home</a>
+                <div class="menu"><ul>
+                    <li class="page_item page-item-2"><a href="https://arbazahmad.in/gallery/">Gallery</a></li>
+                    <li class="page_item page-item-2091"><a href="https://arbazahmad.in/Travel/">Travel</a></li>
+                    <li class="page_item page-item-2669"><a href="https://slatestarcodex.com/top-posts/">Top Posts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="pjgm-bigtitle">
+                <h1 id="pjgm-title">
+                    <span>
+                        <a href="https://arbazahmad.in" title="Arbaz Ahmad" rel="home">Arbaz Ahmad </a>
+                    </span>
+                </h1>
+                <div id="pjgm-description">
+                    <span>
+                        <a href="https://arbazahmad.in" title="Arbaz Ahmad" rel="home"
+                            style="text-decoration: none;font-size: 20px; color: white;">بِسْمِ اللهِ الرَّحْمٰنِ
+                            الرَّحِيْمِ</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="pjgm-main">
+            <div id="left-sidebar" class="widget-area" role="complementary">
+                <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa fa-angle-double-left"></i><i
+                        class="fa fa-angle-double-right"></i></a>
+                <ul class="xoxo">
+                    <li id="categories" class="widget-container widget_nav_menu">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="menu">
+                            <li><a href="#" onclick="filterPosts('all')">All Posts</a></li>
+                            <li><a href="#" onclick="filterPosts('GATE')">GATE</a></li>
+                            <li><a href="#" onclick="filterPosts('ISLAM')">Islam</a></li>
+                            <li><a href="#" onclick="filterPosts('ACHIEVEMENT')">Achievements</a></li>
+                            <li><a href="#" onclick="filterPosts('GALLERY')">Gallery</a></li>
+                            <li><a href="#" onclick="filterPosts('LIFE')">Life</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="pjgm-box">
+                <div id="pjgm-content">
+                    <div id="post-6043" class="post-6043 post type-post status-publish format-standard hentry"
+                        data-category="LIFE">
+                        <h2 class="pjgm-posttitle">
+                            <a href="#" rel="bookmark">about me...</a>
+                        </h2>
+
+                        <div class="pjgm-postmeta">
+                            <span class="meta-prep meta-prep-author">Posted on</span>
+                            <a href="#" rel="bookmark"><span class="entry-date">January 30, 2025</span></a>
+                            <span class="meta-sep">by</span>
+                            <span class="author vcard">
+                                <a class="url fn n" href="https://arbazahmad.in/"
+                                    title="View all posts by Arbaz Ahmad">Arbaz Ahmad</a>
+                            </span>
+                        </div>
+
+                        <div class="pjgm-postcontent">
+                            <p>
+                                hey, i'm arbaz ahmad. i love coding, thrives on technical stuff, and sometimes writing
+                                writing.
+                                there's something about breaking down complex problems and building things from scratch
+                                that keeps me going.
+                                whether it's writing a piece of code, analyzing a chess position, or sharing my thoughts
+                                on life,
+                                i love putting ideas into action.<span class="dots">..</span>
+                                <a href="#" class="read-more" onclick="toggleContent(event)">keep reading</a>
+                            </p>
+
+                            <div class="more-content" style="display: none;">
+                                <p>
+                                    <!-- <span class="image-container">
+                                        <img src="img.png" alt="Arbaz Ahmad" style="width: 200px; height: auto; float: right; margin: 0 15px;" oncontextmenu="return false;" draggable="false">
+                                    </span> -->
+                                    Islam changed my life in ways i never expected. it gave me clarity, discipline, and
+                                    a sense of purpose.
+                                    in a world that constantly tries to pull you in a thousand directions, faith became
+                                    my anchor.
+                                    it taught me patience, resilience, and above all, gratitude. no matter what happens,
+                                    islam always reminds
+                                    me to stay grounded and keep pushing forward.
+                                </p>
+
+                                <p>
+                                    academically, i've spent 16 years in education, with 4 of those years dedicated to
+                                    earning my b.tech in computer science & engineering.
+                                    it's been a journey filled with algorithms, data structures, debugging nightmares,
+                                    and countless cups of chai.
+                                    coding isn't just a skill; it's an art of solving problems and making life
+                                    easier—one line at a time.
+                                </p>
+
+                                <p>
+                                    when i'm not coding or writing, you'll probably find me deep in a game of chess.
+                                    strategy, patience, and the thrill of a good attack—chess is an art i can never get
+                                    enough of.
+                                    if you ever want to play, add me on
+                                    <a href="https://www.chess.com/jusbatman" target="_blank"
+                                        rel="noopener noreferrer">chess.com</a>,
+                                    and let's see who really runs the board!
+                                </p>
+
+                                <p>
+                                    But beyond chess and coding, I have another passion—sports. I’m a die-hard fan of
+                                    <span class="tooltip">UFC
+                                        <span class="tooltip-box">Ultimate Fighting Championship</span>
+                                    </span>, cricket, and football. There's something about the mindset of a fighter,
+                                    the technical brilliance of a footballer, and the strategic plays in cricket
+                                    that completely captivate me. I follow the UFC fights religiously, celebrate every
+                                    cricket World Cup, and enjoy the thrill
+                                    of football matches where anything can happen in the last minute.
+                                </p>
+
+
+                                <p>
+                                    oh, and let’s not forget—i’m obsessed with the <span class="tooltip">UFC
+                                        <span class="tooltip-box">Ultimate Fighting Championship</span>
+                                    </span>.
+                                    the adrenaline, the discipline, the absolute dominance inside the octagon—it’s a
+                                    whole different world, and i love every bit of it.
+                                    from khabib nurmagomedov’s legendary smesh style to the unpredictable knockouts, MMA
+                                    is something i could talk about for hours.
+                                </p>
+
+                                <p>
+                                    but hey, at the end of the day...
+                                    WHO CARES, BROTHA, WHO CARES? TODAY, TODAY WE SMESH!
+                                </p>
+
+                                <p>
+                                    <a href="#" class="hide-btn" onclick="toggleContent(event)">hide</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="pjgm-postutility">
+                            <span class="cat-links">
+                                <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
+                                <a href="#" onclick="filterPosts('LIFE')" rel="category tag">LIFE</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="post-6043" class="post-6043 post type-post status-publish format-standard hentry"
+                        data-category="GATE">
+                        <h2 class="pjgm-posttitle">
+                            <a href="#" rel="bookmark">post gate exam - my thoughts and reflections</a>
+                        </h2>
+
+                        <div class="pjgm-postmeta">
+                            <span class="meta-prep meta-prep-author">Posted on</span> <a href="#" rel="bookmark"><span
+                                    class="entry-date">February 1, 2025</span></a>
+                            <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+                                    href="https://arbazahmad.in/" title="View all posts by Arbaz Ahmad">Arbaz
+                                    Ahmad</a></span>
+                        </div>
+
+                        <div class="pjgm-postcontent">
+                            <p>
+                                reached the exam centre 1 hour and 30 minutes before the reporting time. had some doubts
+                                in my mind,
+                                but i reminded myself that i had prepared well for this moment. as soon as i got the
+                                scribble pad,
+                                i wrote 70+ for myself, believing i could achieve those marks. <span
+                                    class="dots">..</span>
+                                <a href="#" class="read-more" onclick="toggleContent(event)">keep reading</a>
+                            </p>
+
+                            <div class="more-content" style="display: none;">
+
+                                <p>
+                                    before GATE, i couldn't even sit for one hour straight during mock tests. but on
+                                    exam day,
+                                    i wrote for three hours straight without losing focus. i didn't even feel the time
+                                    passing.
+                                    that alone was a huge personal achievement for me.
+                                </p>
+
+                                <p>
+                                    however, the exam centre environment was chaotic. two people near me were talking
+                                    loudly, and for a moment,
+                                    it didn't even feel like an exam hall. i was getting irritated, feeling like i
+                                    should tell them to shut up.
+                                    but somehow, i controlled myself and focused on what mattered. after the exam, i
+                                    felt strangely relieved.
+                                </p>
+
+                                <p,>
+                                    many people found the GATE 2025 exam moderate or even tough, but honestly, i found
+                                    it easier than expected.
+                                    my friend, who consistently ranked under top 10 in GO Classes
+                                    <span class="tooltip">AIMT
+                                        <span class="tooltip-box">All India Mock Test</span>
+                                    </span>,
+                                    said the paper wasn’t extremely easy
+                                    but definitely not difficult either. he compared it to
+                                    <span class="tooltip">GATE
+                                        <span class="tooltip-box">Graduate Aptitude Test in Engineering</span>
+                                    </span> 2024, saying some
+                                    questions looked easy but were actually tricky.
+                                    one thing i noticed was how some MSQs (multiple select questions) were actually
+                                    single-correct types,
+                                    which made them confusing. also, the aptitude section was tougher than expected,
+                                    while technical
+                                    questions were mostly standard.
+                                    </p>
+
+                                    <p>
+                                        for over a year, i dedicated myself to 7–8 subjects, putting in countless hours
+                                        of
+                                        preparation.
+                                        but despite all that, i still made silly mistakes in areas where i usually
+                                        perform
+                                        well, like
+                                        CPU scheduling and pipelining.
+                                        i attempted only 28 questions in the first half of the exam and struggled with
+                                        time
+                                        management.
+                                        that was frustrating. now, at 25 years old, i keep wondering, what's next? do i
+                                        reattempt GATE or move on?
+                                        these thoughts keep circling in my head.
+                                    </p>
+
+                                    <p>
+                                        the second shift of the exam had a lot of questions from aptitude, compiler
+                                        design
+                                        (CD), and operating systems (OS).
+                                        but somehow, most of the ones i attempted were from context-free grammar (CFG),
+                                        regular expressions (RE),
+                                        and waiting time calculations.
+                                        the MSQs were moderate, and NAT (numerical answer type) questions were
+                                        difficult.
+                                        in total, i attempted 51 questions and left 14 unanswered because guessing was
+                                        impossible.
+                                    </p>
+
+                                    <p>
+
+                                        <span class="image-container">
+                                            <img src="files/rough-sheet.webp" alt="scribble-pad"
+                                                style="width: 200px; height: auto; float: right; margin: 0 15px;"
+                                                oncontextmenu="return false;" draggable="false">
+
+                                        </span>
+                                    </p>
+
+                                    <p>
+                                        this was my first GATE attempt. i graduated in 2024, and i worked way too hard
+                                        for
+                                        this.
+                                        took countless mock tests and usually scored decently, even if not exceptionally
+                                        high.
+                                        time was never an issue in mocks, so running out of time on exam day was the
+                                        last
+                                        thing i expected.
+                                    </p>
+
+                                    <p>
+                                        on the day of the exam, i felt a little nervous about some subjects but
+                                        confident
+                                        overall.
+                                        i started with aptitude, which was very easy, and i got almost all of them
+                                        right.
+                                        for a moment, i thought maybe i would outperform even my own expectations.
+                                    </p>
+
+                                    <p>
+                                        then came the technical section. i solved the first 6–7 questions quickly,
+                                        and getting them right made me overconfident.
+                                        but then, i got stuck on one question.
+                                        my original plan was to mark tough questions for review and return to them
+                                        later.
+                                        but because i had solved everything so easily at the start,
+                                        i refused to accept getting stuck—and that cost me dearly.
+                                    </p>
+
+                                    <p>
+                                        before i realized it, i had wasted 11 minutes on just one question.
+                                        by the time i moved on, my rhythm was already broken.
+                                        the frustration of not solving that one question was messing with my head.
+                                        the guilt of breaking my strategy overwhelmed my focus.
+                                    </p>
+
+                                    <p>
+                                        i had barely two minutes left for the last few questions.
+                                        i had marked many for review—including formula-based and easy ones—but time ran
+                                        out.
+                                    </p>
+
+                                    <p>
+                                        looking back, i realize that no matter how much you prepare,
+                                        the actual exam always feels different.
+                                        it's not just about knowing the concepts,
+                                        but also about handling pressure and unexpected situations in the moment.
+                                    </p>
+
+                                    <p>
+                                        despite everything, i am proud of the effort i put in.
+                                        preparing for GATE with sincerity has deepened my understanding of core subjects
+                                        and strengthened my love for technical problem-solving.
+                                    </p>
+
+                                    <p>
+                                        i don't know what the future holds,
+                                        but one thing is certain—
+                                        i will keep working harder.
+                                        i can't wait to bounce back and prove myself again.
+                                    </p>
+
+                                    <p>
+                                        <a href="#" class="hide-btn" onclick="toggleContent(event)">hide</a>
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="pjgm-postutility">
+                            <span class="cat-links">
+                                <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
+                                <a href="#" onclick="filterPosts('GATE')" rel="category tag">GATE</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="post-6043" class="post-6043 post type-post status-publish format-standard hentry"
+                        data-category="GATE">
+                        <h2 class="pjgm-posttitle">
+                            <a href="#" rel="bookmark">Last 24 Hours Before GATE – A Storm of thoughts</a>
+                        </h2>
+
+                        <div class="pjgm-postmeta">
+                            <span class="meta-prep meta-prep-author">Posted on</span> <a href="#" rel="bookmark"><span
+                                    class="entry-date">January 31, 2025</span></a>
+                            <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+                                    href="https://arbazahmad.in/" title="View all posts by Arbaz Ahmad">Arbaz
+                                    Ahmad</a></span>
+                        </div>
+
+                        <div class="pjgm-postcontent">
+                            <p>
+                                it’s finally here. the last 24 hours before my gate exam. i should be feeling confident,
+                                ready to face it after a year of preparation.
+                                but honestly, my mind is a mess. anxiety is hitting me from all sides. i try to recall
+                                what i studied, but everything feels blurry.
+                                it’s like my brain is refusing to cooperate at the very moment i need it the most.<span
+                                    class="dots">..</span>
+                                <a href="#" class="read-more" onclick="toggleContent(event)">keep reading</a>
+                            </p>
+
+                            <div class="more-content" style="display: none;">
+
+                                <p>
+                                    i have been preparing for this exam since april 2024. last year, i couldn’t even
+                                    complete the paper, and that failure stayed with me.
+                                    it wasn’t easy to accept, but instead of giving up, i made a promise to myself—i
+                                    would
+                                    come back stronger.
+                                    i took a gap year, dedicating everything to this one exam.
+                                </p>
+
+                                <p>
+                                    but things didn’t go as planned. the internet became both a blessing and a curse.
+                                    distractions, wasted hours, and months slipping away before i even realized it.
+                                    there were days when i was completely focused, solving problems like a machine, and
+                                    then
+                                    there were days when i felt lost, unable to do even the simplest things.
+                                    and now, with only a day left, all those lost moments are coming back to haunt me.
+                                </p>
+
+                                <p>
+                                    i know i haven’t covered everything. my syllabus isn’t complete, and i don’t feel
+                                    fully prepared.
+                                    the fear of not doing well is real. but at the same time, i remind myself—i have put
+                                    in the effort.
+                                    maybe it’s not perfect, maybe it’s not enough for a top score, but i have done my
+                                    best with what i had.
+                                </p>
+
+                                <p>
+                                    i am not expecting anything crazy. a 40+ score is what i hope for, enough to into
+                                    one of the older IITs.
+                                    PSUs are out of my league, and i have made peace with that. right now, all i
+                                    want is to walk into that exam hall, stay calm, and give it my best.
+                                </p>
+
+                                <p>
+                                    no matter what happens tomorrow, i know one thing for sure—this journey has
+                                    taught me
+                                    more than just technical concepts. it has taught me patience, discipline,
+                                    and most importantly, the value of time. because time, once lost, never comes
+                                    back. and
+                                    if there’s one thing i regret, it’s not guarding it better.
+                                </p>
+
+                                <p>
+                                    for now, i just need to breathe, trust whatever i have learned, and face
+                                    tomorrow with a
+                                    clear mind. let’s do this.
+                                </p>
+
+                                <p>
+                                    <a href="#" class="hide-btn" onclick="toggleContent(event)">hide</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pjgm-postutility">
+                            <span class="cat-links">
+                                <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
+                                <a href="#" onclick="filterPosts('GATE')" rel="category tag">GATE</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="post-6043" class="post-6043 post type-post status-publish format-standard hentry"
+                        data-category="GATE">
+                        <h2 class="pjgm-posttitle">
+                            <a href="#" rel="bookmark">Last 36 hours of my one year struggle</a>
+                        </h2>
+
+                        <div class="pjgm-postmeta">
+                            <span class="meta-prep meta-prep-author">Posted on</span> <a href="#" rel="bookmark"><span
+                                    class="entry-date">January 30, 2025</span></a>
+                            <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+                                    href="https://arbazahmad.in/" title="View all posts by Arbaz Ahmad">Arbaz
+                                    Ahmad</a></span>
+                        </div>
+
+                        <div class="pjgm-postcontent">
+                            <p>
+                                i have been preparing for GATE 2025 since april 2024. last year, i couldn't complete the
+                                exam, and that feeling of failure weighed heavy on me.
+                                but instead of letting it break me, i told myself, "next year, i'll do better." with
+                                that hope, i took a gap year—one whole year dedicated to nothing but GATE.
+
+                                <span class="dots">...</span>
+                                <a href="#" class="read-more" onclick="toggleContent(event)">keep reading</a>
+                            </p>
+
+                            <div class="more-content" style="display: none;">
+
+                                <p>
+                                    but life, as always, had other plans. the internet became my biggest enemy.
+                                    distractions, technical issues, and wasted days turned into weeks, then months.
+                                    before i knew it, i had lost almost 3-4 crucial months. the regret of lost time
+                                    gnawed
+                                    at me, yet no matter how much i cursed the past, the clock never turned back.
+                                </p>
+
+                                now, here i am, with less than 60% of the syllabus covered. fear creeps in
+                                sometimes,
+                                whispering that i’m not ready. but amidst all that chaos, i remind myself—i’ve
+                                worked
+                                hard on what i could.
+                                maybe it’s not perfect, maybe it’s not enough, but i’m not giving up. i’m going to
+                                give
+                                my best with what i have and hope to score around 40 marks.
+
+                                <p>
+                                    it's not just about numbers anymore. it's about proving to myself that even when
+                                    life
+                                    throws me off track, i can still stand up and fight.
+                                </p>
+
+                                <p>
+                                    and damn the internet—stealing my time, my focus, my peace! if there's one thing
+                                    i've
+                                    learned, it's this: the world won’t wait for you to get back on track,
+                                    so guard your time like your life depends on it. because it does.
+                                </p>
+                                <p>
+                                    <a href="#" class="hide-btn" onclick="toggleContent(event)">hide</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="pjgm-postutility">
+                            <span class="cat-links">
+                                <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
+                                <a href="#" onclick="filterPosts('GATE')" rel="category tag">GATE</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="primary" class="widget-area" role="complementary">
+                <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa fa-angle-double-left"></i><i
+                        class="fa fa-angle-double-right"></i></a>
+
+                <ul class="xoxo">
+                    <!-- CATEGORIES SECTION -->
+                    <li id="categories" class="widget-container widget_nav_menu">
+                        <h3 class="widget-title">purpose of life</h3>
+                        <ul class="menu">
+                            <li><a href="#" onclick="filterPosts('all')">All Posts</a></li>
+                            <li><a href="#" onclick="filterPosts('GATE')">GATE</a></li>
+                            <li><a href="#" onclick="filterPosts('ISLAM')">Islam</a></li>
+                            <li><a href="#" onclick="filterPosts('ACHIEVEMENT')">Achievements</a></li>
+                            <li><a href="#" onclick="filterPosts('GALLERY')">Gallery</a></li>
+                            <li><a href="#" onclick="filterPosts('LIFE')">Life</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="pjgm-footer">
+            <div id="pjgm-ender">
+                <a href="http://www.arbazahmad.in/" title="Arbaz" rel="designer"> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTER FUNCTIONS -->
+    <script>
+        function filterPosts(category) {
+            const posts = document.querySelectorAll('[id^="post-"]');
+
+            posts.forEach(post => {
+                const postCategory = post.dataset.category;
+                if (category === 'all' || postCategory === category) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script>
+        jQuery(function () {
+            jQuery('#primary .sidebar-toggle').click(function () {
+                jQuery('body').toggleClass('s1-collapse').toggleClass('s1-expand');
+                if (jQuery('body').is('.s2-expand')) {
+                    jQuery('body').toggleClass('s2-expand').toggleClass('s2-collapse');
+                }
+            });
+            jQuery('#left-sidebar .sidebar-toggle').click(function () {
+                jQuery('body').toggleClass('s2-collapse').toggleClass('s2-expand');
+                if (jQuery('body').is('.s1-expand')) {
+                    jQuery('body').toggleClass('s1-expand').toggleClass('s1-collapse');
+                }
+            });
+        });
+
+        function toggleContent(event) {
+            event.preventDefault();
+            const parentDiv = event.target.closest('.pjgm-postcontent');
+            const content = parentDiv.querySelector('.more-content');
+            const dots = parentDiv.querySelector('.dots');
+            const readMore = parentDiv.querySelector('.read-more');
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                dots.style.display = "none";
+                readMore.style.display = "none";
+            } else {
+                content.style.display = "none";
+                dots.style.display = "inline";
+                readMore.style.display = "inline";
+            }
+        }
+    </script>
+
+    <script>
+        // Disable right-click on the whole page
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault(); // Prevent right-click menu
+        });
+    </script>
+</body>
+
+</html>

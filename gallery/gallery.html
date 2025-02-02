@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Arbaz Ahmad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3595/3595030.png">
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://slatestarcodex.com/wp-content/themes/responsive-pujugama-v3/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' id='font-awesome-css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' type='text/css'
+        media='all' />
+
+    <script type="text/javascript" src="https://c0.wp.com/c/6.7.1/wp-includes/js/jquery/jquery.min.js"
+        id="jquery-core-js"></script>
+
+    <style>
+        body {
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        .read-more,
+        .hide-btn {
+            text-decoration: none;
+        }
+
+        .image-container img {
+            pointer-events: none;
+            user-select: none;
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: 0 15px;
+            -webkit-user-drag: none;
+        }
+
+        /* tooltip (on hovering over the a particular word) */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: default;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .tooltip .tooltip-box {
+            visibility: hidden;
+            width: 220px;
+            background-color: white;
+            color: #333;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #799adc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .tooltip:hover .tooltip-box {
+            visibility: visible;
+            opacity: 1;
+            font-size: 11px;
+        }
+
+        /* small arrow */
+        .tooltip .tooltip-box::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: #799adc transparent transparent transparent;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 5px;
+        }
+
+        .column img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        /* Media query for mobile screens */
+        @media screen and (max-width: 768px) {
+            .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 5px;
+        }
+
+        .column img {
+            width: 100%;
+            cursor: pointer;
+        }
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            position: relative;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .popup-content img {
+            max-width: 100%;
+            max-height: 70vh;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .description {
+            font-size: 12px;
+        }
+
+    </style>
+
+</head>
+
+<body data-rsssl=1 class="home blog s1-collapse s2-collapse">
+
+    <div id="pjgm-wrap">
+        <div id="pjgm-header">
+            <div id="pjgm-menubar">
+                <a href="https://arbazahmad.in/" class="pjgm-home" title="Arbaz Ahmad" rel="home">Home</a>
+                <div class="menu">
+                    <ul>
+                        <li class="page_item page-item-2"><a href="https://arbazahmad.in/gallery/">Gallery</a></li>
+                        <li class="page_item page-item-2091"><a href="https://arbazahmad.in/Travel/">Travel</a></li>
+                        <li class="page_item page-item-2669"><a href="https://slatestarcodex.com/top-posts/">Top
+                                Posts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="pjgm-bigtitle">
+                <h1 id="pjgm-title">
+                    <span>
+                        <a href="https://arbazahmad.in" title="Arbaz Ahmad" rel="home">Arbaz Ahmad - Gallery </a>
+                    </span>
+                </h1>
+                <div id="pjgm-description">
+                    <span>
+                        <a href="https://arbazahmad.in" title="Arbaz Ahmad" rel="home"
+                            style="text-decoration: none; font-size: 20px; color: white;">بِسْمِ اللهِ الرَّحْمٰنِ
+                            الرَّحِيْمِ</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="pjgm-main">
+            <div id="left-sidebar" class="widget-area" role="complementary">
+                <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa fa-angle-double-left"></i><i
+                        class="fa fa-angle-double-right"></i></a>
+                <ul class="xoxo">
+                    <li id="categories" class="widget-container widget_nav_menu">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="menu">
+                            <li><a href="#" onclick="filterPosts('all')">All Posts</a></li>
+                            <li><a href="#" onclick="filterPosts('GATE')">GATE</a></li>
+                            <li><a href="#" onclick="filterPosts('ISLAM')">Islam</a></li>
+                            <li><a href="#" onclick="filterPosts('ACHIEVEMENT')">Achievements</a></li>
+                            <li><a href="#" onclick="filterPosts('GALLERY')">Gallery</a></li>
+                            <li><a href="#" onclick="filterPosts('LIFE')">Life</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="pjgm-box">
+                <div id="pjgm-content">
+                    <div id="post-6043" class="post-6043 post type-post status-publish format-standard hentry"
+                        data-category="GALLERY">
+                        <h2 class="pjgm-posttitle">
+                            <a href="#" rel="bookmark">Allahabad, Uttar Pradesh</a>
+                        </h2>
+
+                        <div class="pjgm-postmeta">
+                            <span class="meta-prep meta-prep-author">Visited on</span> <a href="#" rel="bookmark"><span
+                                    class="entry-date">January 19, 2022</span></a>
+                            <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+                                    href="https://arbazahmad.in/" title="View all posts by Arbaz Ahmad">Arbaz
+                                    Ahmad</a></span>
+                        </div>
+
+                        <div class="pjgm-postcontent">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="Tomb at Allahabad.png" alt="Snow" class="image"
+                                        onclick="openPopup('Tomb at Allahabad.png', 'Tomb at Allahabad')">
+                                </div>
+                                <div class="column">
+                                    <img src="Allahabad University.png" alt="Snow" class="image"
+                                        onclick="openPopup('Allahabad University.png', 'Allahabad University')">
+                                </div>
+                                <div class="column">
+                                    <img src="IIIT Allahabad 1.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 1.png', 'IIIT Allahabad')">
+                                </div>
+                                <div class="column">
+                                    <img src="IIIT Allahabad 2.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 2.png', 'IIIT Allahabad')">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="IIIT Allahabad 3.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 3.png', 'IIIT Allahabad')">
+                                </div>
+                                <div class="column">
+                                    <img src="IIIT Allahabad 2.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 2.png', 'IIIT Allahabad')">
+                                </div>
+                                <div class="column">
+                                    <img src="IIIT Allahabad 2.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 2.png', 'IIIT Allahabad')">
+                                </div>
+                                <div class="column">
+                                    <img src="IIIT Allahabad 2.png" alt="Snow" class="image"
+                                        onclick="openPopup('IIIT Allahabad 2.png', 'IIIT Allahabad')">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pop-up container -->
+                        <div id="popup" class="popup" onclick="closePopup(event)">
+                            <div class="popup-content" id="popup-content">
+                                <img id="popup-image" src="" alt="">
+                                <div class="description" id="popup-description"></div>
+                            </div>
+                        </div>
+
+                        <div class="pjgm-postutility">
+                            <span class="cat-links">
+                                <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
+                                <a href="#" onclick="filterPosts('GALLERY')" rel="category tag">GALLERY</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="primary" class="widget-area" role="complementary">
+                <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa fa-angle-double-left"></i><i
+                        class="fa fa-angle-double-right"></i></a>
+
+                <ul class="xoxo">
+                    <!-- CATEGORIES SECTION -->
+                    <li id="categories" class="widget-container widget_nav_menu">
+                        <h3 class="widget-title">purpose of life</h3>
+                        <ul class="menu">
+                            <li><a href="#" onclick="filterPosts('all')">All Posts</a></li>
+                            <li><a href="#" onclick="filterPosts('GATE')">GATE</a></li>
+                            <li><a href="#" onclick="filterPosts('ISLAM')">Islam</a></li>
+                            <li><a href="#" onclick="filterPosts('ACHIEVEMENT')">Achievements</a></li>
+                            <li><a href="#" onclick="filterPosts('GALLERY')">Gallery</a></li>
+                            <li><a href="#" onclick="filterPosts('LIFE')">Life</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="pjgm-footer">
+            <div id="pjgm-ender">
+                <a href="http://www.arbazahmad.in/" title="Arbaz" rel="designer"> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTER FUNCTIONS -->
+    <script>
+        function filterPosts(category) {
+            const posts = document.querySelectorAll('[id^="post-"]');
+
+            posts.forEach(post => {
+                const postCategory = post.dataset.category;
+                if (category === 'all' || postCategory === category) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script>
+        jQuery(function () {
+            jQuery('#primary .sidebar-toggle').click(function () {
+                jQuery('body').toggleClass('s1-collapse').toggleClass('s1-expand');
+                if (jQuery('body').is('.s2-expand')) {
+                    jQuery('body').toggleClass('s2-expand').toggleClass('s2-collapse');
+                }
+            });
+            jQuery('#left-sidebar .sidebar-toggle').click(function () {
+                jQuery('body').toggleClass('s2-collapse').toggleClass('s2-expand');
+                if (jQuery('body').is('.s1-expand')) {
+                    jQuery('body').toggleClass('s1-expand').toggleClass('s1-collapse');
+                }
+            });
+        });
+
+        function toggleContent(event) {
+            event.preventDefault();
+            const parentDiv = event.target.closest('.pjgm-postcontent');
+            const content = parentDiv.querySelector('.more-content');
+            const dots = parentDiv.querySelector('.dots');
+            const readMore = parentDiv.querySelector('.read-more');
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                dots.style.display = "none";
+                readMore.style.display = "none";
+            } else {
+                content.style.display = "none";
+                dots.style.display = "inline";
+                readMore.style.display = "inline";
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault(); // Prevent right-click menu
+        });
+    </script>
+
+    <script>
+        // Open the popup
+        function openPopup(imageSrc, description) {
+            const popup = document.getElementById('popup');
+            const popupImage = document.getElementById('popup-image');
+            const popupDescription = document.getElementById('popup-description');
+
+            // Set the image source and description
+            popupImage.src = imageSrc;
+            popupDescription.textContent = description;
+
+            // Display the popup
+            popup.style.display = 'flex';
+        }
+
+        // Close the popup when clicking outside the popup content
+        function closePopup(event) {
+            const popupContent = document.getElementById('popup-content');
+            if (!popupContent.contains(event.target)) {
+                const popup = document.getElementById('popup');
+                popup.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
